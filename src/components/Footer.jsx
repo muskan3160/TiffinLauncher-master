@@ -16,7 +16,7 @@ const Footer = () => {
         <div className="names">
           Aakash Kumar{" "}
           <a
-            href="https://www.linkedin.com/in/jaskeerat-singh-5438531a6/"
+            href="https://www.linkedin.com/in/aakash-kumar-3a7433207"
             target="_blank"
           >
             Reach Out
@@ -25,7 +25,7 @@ const Footer = () => {
         <div className="names">
           Muskan Jaglan{" "}
           <a
-            href="https://www.linkedin.com/in/jagmeet-singh-835335202/"
+            href="https://www.linkedin.com/in/muskan-jaglan-6b645817b/"
             target="_blank"
           >
             Reach Out
@@ -34,7 +34,7 @@ const Footer = () => {
         <div className="names">
          Vaishnavi Khurana{" "}
           <a
-            href="https://www.linkedin.com/in/avneet-kaur-116357133"
+            href="https://www.linkedin.com/in/vaishnavi-khurana-841887192"
             target="_blank"
           >
             Reach Out
@@ -43,7 +43,7 @@ const Footer = () => {
         <div className="names">
           Priyanshu Sabharwal{" "}
           <a
-            href="https://www.linkedin.com/in/harsimran-singh-2422681b8/"
+            href="https://www.linkedin.com/in/priyanshu-sabharwal-0b0075209"
             target="_blank"
           >
             Reach Out

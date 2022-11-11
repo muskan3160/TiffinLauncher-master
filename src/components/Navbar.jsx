@@ -126,7 +126,7 @@ const Navbar = () => {
           </span>
         ) : (
           <div className="loggedUser">
-            <img className="user_logo" src={user[0]?.userImage} />
+            <img className="user_logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2TgOv9CMmsUzYKCcLGWPvqcpUk6HXp2mnww&usqp=CAU" />
             <div className="loggedUser_info">
               <h4>{user[0]?.name}</h4>
               <button

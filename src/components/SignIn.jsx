@@ -68,12 +68,12 @@ const SignIn = () => {
           </button>
         </form>
         <p>
-          By signing-in you agree to the Alan Eats conditions. Please see our
+          By signing-in you agree to the Tiffin Launcher conditions. Please see our
           Privacy Notice
         </p>
         <Link to="/signup">
           <button className="sign_inRegisterButton">
-            Create Your Alan Eats Account
+            Create Your Tiffin Launcher Account
           </button>
         </Link>
       </div>

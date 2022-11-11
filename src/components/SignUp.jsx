@@ -3,7 +3,7 @@ import "./css/SignIn.css";
 import { Link, useHistory } from "react-router-dom";
 import axios from "axios";
 import { useState } from "react";
-import AlanEatsLogo from "../Images/AlanEatsLogo.png";
+import AlanEatsLogo from "../Images/TL.png";
 import Resizer from "react-image-file-resizer";
 import { AlertMessage } from "./AlertMessage";
 
@@ -65,7 +65,7 @@ const SignUp = () => {
   return (
     <div className="signup">
       <Link to="/">
-        <img src={AlanEatsLogo} className="signin_logo" alt="alan eat" />
+        <img src={AlanEatsLogo} className="signin_logo" alt=" TL LOGO" />
       </Link>
       <div className="signin_container">
         <h1>Sign-up</h1>
@@ -120,7 +120,7 @@ const SignUp = () => {
           <AlertMessage message="Account created successfully" />
         ) : null}
         <p>
-          By signing-in you agree to the Alan Eats conditions. Please see our
+          By signing-in you agree to the Tiffin Launcher conditions. Please see our
           Privacy Notice
         </p>
       </div>
