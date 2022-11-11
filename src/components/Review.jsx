@@ -13,7 +13,7 @@ const Review = ({ reviewDetails }) => {
     let userData;
     try {
      userData = await axios.get(
-       `https://alaneats.herokuapp.com/api/user/${reviewDetails.user}`
+       `/api/user/${reviewDetails.user}`
      );
       setUserName(userData.data.user.name);
       setUserImage(userData.data.user.userImage);

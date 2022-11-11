@@ -14,7 +14,7 @@ const Admin = () => {
   const time = JSON.parse(localStorage.getItem("orderTime"));
 
   useEffect(() => {
-    axios.get(`https://alaneats.herokuapp.com/api/order/`).then((res) => {
+    axios.get(`/api/order/`).then((res) => {
       setOrderData([...res.data.data]);
 
       localStorage.setItem(
@@ -30,7 +30,7 @@ const Admin = () => {
       axios.delete(`/api/order/${newStatus.orderId}`);
     } else if (newStatus) {
       axios.patch(
-        `https://alaneats.herokuapp.com/api/order/${newStatus.orderId}`,
+        `/api/order/${newStatus.orderId}`,
         {
           status: newStatus.status,
           orderId: newStatus.orderId,

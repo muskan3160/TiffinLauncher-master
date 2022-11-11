@@ -21,7 +21,7 @@ const SignIn = () => {
       if (email.length > 0 && password.length > 0) {
         let user = [];
         user = await axios.post(
-          "https://alaneats.herokuapp.com/api/user/login",
+          "/api/user/login",
           {
             email: email,
             password: password,

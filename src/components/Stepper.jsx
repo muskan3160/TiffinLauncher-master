@@ -53,7 +53,7 @@ export default function VerticalLinearStepper({ orderId }) {
 
   const getOrderData = async () => {
     const data = await axios.get(
-      `https://alaneats.herokuapp.com/api/order/${orderId}`
+      `/api/order/${orderId}`
     );
     setOrderData({ ...data.data.data });
   };

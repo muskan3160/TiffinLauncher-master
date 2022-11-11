@@ -15,7 +15,7 @@ const FoodRow = ({ type }) => {
   let user = JSON.parse(userCredentials);
 
   const getAllFoodItems = () => {
-    axios.get("https://alaneats.herokuapp.com/api/food").then((res) => {
+    axios.get("/api/food").then((res) => {
       if (type === "BreakFast") {
         setFoodItems(res.data.data);
       } else {

@@ -20,7 +20,7 @@ const ProductDetail = () => {
 
   let addToCart = async () => {
     try {
-      await axios.post("https://alaneats.herokuapp.com/api/user/cart", {
+      await axios.post("/api/user/cart", {
         food: foodId,
         user: user[0]._id.trim(),
       });
@@ -32,7 +32,7 @@ const ProductDetail = () => {
 
   let getFoodDetails = () => {
     axios
-      .get(`https://alaneats.herokuapp.com/api/food/${foodId}`)
+      .get(`/api/food/${foodId}`)
       .then((res) => {
         setDetails(res.data.data);
         setIngredients(res.data.data.ingredients);

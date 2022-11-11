@@ -29,7 +29,7 @@ const SignUp = () => {
       ) {
         e.preventDefault();
         const user = await axios.post(
-          "https://alaneats.herokuapp.com/api/user/signup",
+          "/api/user/signup",
           {
             userImage: img,
             name: name,
