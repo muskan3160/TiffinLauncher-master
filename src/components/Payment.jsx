@@ -1,6 +1,6 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
-import AlanEatsLogo from "../Images/AlanEatsLogo.png";
+import AlanEatsLogo from "../Images/TL.png";
 import axios from "axios";
 import "./css/Payment.css";
 import { useDispatch, useSelector } from "react-redux";
@@ -124,7 +124,7 @@ function Payment(props) {
 
           {/* right div */}
           <div className="right">
-            <h2>Tummy's growling 😣, let's proceed to payment</h2>
+            <h2>Filling your tummy is what we care about😍, let's proceed to payment!!</h2>
             <button
               className="App-link"
               style={{ cursor: "pointer" }}

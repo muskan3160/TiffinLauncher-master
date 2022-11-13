@@ -54,7 +54,7 @@ const ProductDetail = () => {
       arr = await Promise.all(
         reviewsList.map(async (id) => {
           let res = await axios.get(
-            `https://alaneats.herokuapp.com/api/review/${id}`
+            `/api/review/${id}`
           );
           return res.data.data;
         })
