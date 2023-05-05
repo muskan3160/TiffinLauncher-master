@@ -2,6 +2,7 @@ import React from "react";
 import "./css/Navbar.css";
 import SearchIcon from "@material-ui/icons/Search";
 import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket";
+import CallSplitIcon from '@material-ui/icons/CallSplit';
 import { useHistory } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
@@ -106,13 +107,22 @@ const Navbar = () => {
             </button>
           </div>
         ) : null}
+        {/* <div
+          className="nav_split"
+          onClick={() => {
+            history.push("/FairSplit");
+          }}>
+          <CallSplitIcon className="fairSplit"/>
+        </div> */}
         <div
           className="nav_cart"
           onClick={() => {
             history.push("/checkout");
           }}
         >
+          
           <ShoppingBasketIcon className="cartIcon" />
+          
         </div>
 
         {!user ? (

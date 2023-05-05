@@ -1,11 +1,27 @@
 import React from "react";
+import { useState } from "react";
 import CurrencyFormat from "react-currency-format";
 import { useDispatch, useSelector } from "react-redux";
 import { PayAction } from "../redux/actions/payAction";
 import "./css/Subtotal.css";
 
-const Subtotal = ({ price, items, setShowPay }) => {
+
+const Subtotal = ({ price, items, setShowPay, message}) => {
+  
   const dispatch = useDispatch();
+  
+
+
+  // const handleChange = event => {
+  //   setMessage(event.target.value);
+  // };
+
+  const handleClick = event => {
+   
+    console.log("Bill Split:", parseInt(message)/parseInt(price));
+  };
+  
+    
   
   return (
     <div className="subtotal">
@@ -36,8 +52,24 @@ const Subtotal = ({ price, items, setShowPay }) => {
       >
         Proceed to checkout
       </button>
-    </div>
+
+
+      {/* !!You can check the bill per head!!
+      Enter no. of people : 
+      <input
+        type="value"
+        id="message"
+        name="message"
+        // onChange={handleChange}
+        value={message}
+      /> */}
+      
+      {/* <button onClick={handleClick}>Split</button> */}
+      {/* Bill Split : {price}/{message}; */}
+      </div>
+
   );
-};
+}
+;
 
 export default Subtotal;

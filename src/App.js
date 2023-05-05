@@ -21,6 +21,7 @@ import { PaymentAction } from "./redux/actions/payAction";
 import PayModal from './components/PayModal';
 import Tracker from './components/Tracker';
 
+
 // if (!userCredentials) {
 // localStorage.setItem("user logged in", JSON.stringify([{ email: null }]));
 // }
@@ -141,7 +142,7 @@ let App = () => {
         <FoodRow type="Lunch" />
         <FoodRow type="Dinner" />
         <FoodRow type="Snacks" />
-        <FoodRow type="Drinks" />
+        {/* <FoodRow type="Drinks" /> */}
         <Footer />
       </Route>
       <Route path="/signin">
@@ -156,6 +157,7 @@ let App = () => {
       <Route path="/productDetail/:foodId" >
         <Navbar />
         <ProductDetail />
+        
         <Footer />
       </Route>
       <Route exact path="/checkout">
@@ -168,16 +170,16 @@ let App = () => {
         <Footer />
       </Route>
 
-      {user !== null && user[0]?.email === "jaskeerat@gmail.com" ?
+      {/* {user !== null && user[0]?.email === "jaskeerat@gmail.com" ?
         <Route exact path="/admin" component={Admin} /> : <Route path="/admin" component={ErrorPage} />
-      }
-
+      } */}
+{/* 
       {orderId && user !== null && user[0]?.email !== "jaskeerat@gmail.com" ?
         <Route exact path="/foodtracker">
           <Navbar />
           <Tracker />
           <Footer />
-        </Route> : <Route path="/foodtracker" component={ErrorPage} />}
+        </Route> : <Route path="/foodtracker" component={ErrorPage} />} */}
 
       <Route exact path="/order/payment/success">
         <PayModal orderId={orderId} />
